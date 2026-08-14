@@ -1,4 +1,4 @@
-import time
+from datetime import time
 
 #   Paramètres officiels
 
@@ -32,7 +32,8 @@ MAJORATION_TAXI = 0.25
 
 #   Variables
 kilometrage = float()
-heure = int()
+heure = time()
+print(heure)
 
 #   Affichage de bienvenue à l'utilisateur
 
@@ -45,5 +46,22 @@ print("\nCet programme écrit en Python vous permet de déterminer le \ncoût de
 #   Collecte d'information sur le trajet
 
 try:
+        kilometrage = float(input("Quelle est la distance de vôtre trajet ? : "))
+        if kilometrage > 0.0:
+            pass
+        elif kilometrage == 0.0:
+            print("Votre saisie est incorrecte")
+            kilometrage = float(input("Quelle est la distance de vôtre trajet ? : "))
+        else:
+            print("Veuillez entrez une distance supérieur à 0 en km")
+            kilometrage = float(input("Quelle est la distance de vôtre trajet ? : "))
+except:
+        print("Veuillez entrer des informations valides")
+
+
+
+        
+
+
 
 
