@@ -33,8 +33,8 @@ MAJORATION_TAXI = 0.25
 #   Variables
 PRIX_TOTAL = 0.0
 kilometrage = float()
-heure = datetime.now()
-heurePointe = (datetime.time(7, 00) <= heure <= datetime.time(8, 45)) or (datetime.time(11, 45) <= heure <= datetime.time(13, 00)) or (datetime.time(17, 00) <= heure <= datetime.time(19, 00))
+heure = datetime.now().time()
+heurePointe = (time(7, 00) <= heure <= time(8, 45)) or (time(11, 45) <= heure <= time(13, 00)) or (time(17, 00) <= heure <= time(19, 00))
 print(heurePointe)
 
 #   Affichage de bienvenue à l'utilisateur
