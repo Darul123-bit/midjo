@@ -55,24 +55,24 @@ try:
     print("\t1 • Zemidjan (Taxi-moto)")
     print("\t2 • Taxi (Voiture)")
     print(60*'_')
-    choix = input("\tTapez 1 ou 2 : ")
+    choix = int(input("\tTapez 1 ou 2 : "))
 
     while True:
         if choix in range(1, 3, 1):
             match choix:
                 case 1:
                     PRIX_TOTAL = PRIX_DE_BASE_ZEM
-                    break
                 case 2:
                     PRIX_TOTAL = PRIX_DE_BASE_TAXI
-                    break
+
+            break           
         else:
             print(60*'_')
             print("\t1 • Zemidjan (Taxi-moto)")
             print("\t2 • Taxi (Voiture)")
             print(60*'_')
-            choix = input("\tTapez 1 ou 2 : ")
-            
+            choix = int(input("\tTapez 1 ou 2 : "))
+
     print(60*'_')
     kilometrage = float(input("\tQuelle est la distance de vôtre trajet ? : "))
     if kilometrage > 0.0:
