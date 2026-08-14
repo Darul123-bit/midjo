@@ -4,6 +4,6 @@
 
 ### Comment lancer ce programme ?
 
-```shell
+```python
     python main.py
 ```
