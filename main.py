@@ -1,4 +1,4 @@
-from datetime import time
+import datetime 
 
 #   Paramètres officiels
 
@@ -46,22 +46,19 @@ print("\nCet programme écrit en Python vous permet de déterminer le \ncoût de
 #   Collecte d'information sur le trajet
 
 try:
+    print("Quelle moyen utiliserez-vous ?".center(60, ' '))
+    print("\t1 • Zemidjan (Taxi-moto)")
+    print("\t2 • Taxi (Voiture)")
+    print(60*'_')
+
+    kilometrage = float(input("Quelle est la distance de vôtre trajet ? : ".center(60, ' ')))
+    if kilometrage > 0.0:
+        pass
+    elif kilometrage == 0.0:
+        print("Votre saisie est incorrecte")
         kilometrage = float(input("Quelle est la distance de vôtre trajet ? : "))
-        if kilometrage > 0.0:
-            pass
-        elif kilometrage == 0.0:
-            print("Votre saisie est incorrecte")
-            kilometrage = float(input("Quelle est la distance de vôtre trajet ? : "))
-        else:
-            print("Veuillez entrez une distance supérieur à 0 en km")
-            kilometrage = float(input("Quelle est la distance de vôtre trajet ? : "))
+    else:
+        print("Veuillez entrez une distance supérieur à 0 en km")
+        kilometrage = float(input("Quelle est la distance de vôtre trajet ? : "))        
 except:
         print("Veuillez entrer des informations valides")
-
-
-
-        
-
-
-
-
