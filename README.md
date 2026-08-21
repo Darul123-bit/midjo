@@ -18,5 +18,3 @@ la commande _python main.py_ lancera l'exécution du programme
 ![](assets/image2.png)
 
 
-| Emmanuel | nuelo | https://github.com/Darul123-bit/midjo.git | https://github.com/Darul123-bit/lidie.git |
-
