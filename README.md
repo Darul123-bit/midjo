@@ -9,6 +9,14 @@ Lancer cette commande à la base dur projet
     python main.py
 ```
 
-comme sur l'image ci-dessous
+> comme sur l'image ci-dessous
 ![](assets/image1.png)
+
+la commande _python main.py_ lancera l'exécution du programme
+
+> Bien vous avez lancer le programme
+![](assets/image2.png)
+
+
+| Emmanuel | nuelo | https://github.com/Darul123-bit/midjo.git | https://github.com/Darul123-bit/lidie.git |
 
